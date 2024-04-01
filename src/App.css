@@ -1,0 +1,126 @@
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.HomePageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+.HomePageContainer * {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.HomeModeBtn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.HomeHeading {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.HomeMain {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeIntro {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.HomeImage {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeImage img {
+    height: 75%;
+}
+
+.HomeLabel {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    background: transparent;
+    border: none;
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.HomeLabel img {
+    margin-top: 5px;
+}
+
+.HomeBoxContainer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.HomeBox {
+    height: 50vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.154);
+    cursor: pointer;
+    font-size: 2rem;
+    transition: all 0.4s ease;
+}
+
+.HomeBox:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(140, 158, 247);
+}
+
+.HomeBox.dark {
+    background-color: rgba(58, 57, 57, 0.623);
+    color: rgb(195, 212, 233);
+}
+
+.HomeBox.dark:hover {
+    color: rgb(19, 22, 35);
+    background-color: rgb(140, 158, 247);
+}
+
+.boxIcon {
+    font-size: 4rem;
+}
